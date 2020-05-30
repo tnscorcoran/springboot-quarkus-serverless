@@ -1,10 +1,13 @@
-# Startup and memory usage comparison between Springboot and Quarkus - then demonstration of Native Quarkus running Serverless on OpenShift.
+# Demo: 
+# Part 1 - Comparison of Spring Boot versus Quarkus in memory consumption and startup times. 
+# Part 2 - Implements a popular use case for Quarkus in Native mode - as a serverless workload on Kubernetes, in our case the industry leading Kubernetes distribution, Red Hat OpenShift. 
 This demo applies some simple comparisons on memory consumption and startup times of Spring Boot and Quarkus. Then we implement a popular use of Quarkus in Native mode: Serverless on Kubernetes, in our case Red Hat OpenShift.
 
 It takes two very simple and pretty identical RESTful applications and compares memory consumption and startup times in
 - Spring Boot
 - Quarkus in JVM mode
 - Quarkus in Native mode
+We also briefly demonstrate Quarkus' live code updating capabilities.
 
 We then push our native application as container to the popular Quay container registry and from there we pull it into a KNative Serverless application running on Red Hat's industry leading Kubernetes distribution, OpenShift.
 
