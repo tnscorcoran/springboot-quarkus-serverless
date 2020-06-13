@@ -250,7 +250,7 @@ Now it's time to pull in our Quarkus image in Serverless mode. Change to the Dev
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/21-developer-perspective-create-from-container-image.png)
 
-Choose the registry/repository you created earlier, in my case _quay.io/tnscorcoran/native-quarkus-hello_. Choose _KNative Service_ and accept the defaults:
+Choose the registry/repository you created earlier, in my case _quay.io/tnscorcoran/native-quarkus-hello_. Choose _KNative Service_ and accept the other defaults:
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/22-knative-app-create.png)
 
