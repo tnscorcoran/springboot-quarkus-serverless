@@ -254,7 +254,7 @@ Choose the registry/repository you created earlier, in my case _quay.io/tnscorco
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/22-knative-app-create.png)
 
-*Note if you want you can modify the scaling defaults using the _Scaling_ link. By default it scakles to zero after some seconds, which is great for saving cloud costs and we'll experience below.*
+*Note if you want you can modify the scaling defaults using the _Scaling_ link at the bottom of the screen. By default it scales to zero after some seconds, which is great for saving cloud costs and we'll experience below.*
 
 
 
