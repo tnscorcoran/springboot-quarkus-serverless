@@ -281,4 +281,4 @@ We demonstrated the following
 - a really cool feature of Quarkus - live code update.
 - an outstanding use case of Quarkus Native mode - serverless on Kubernetes. We used the industry leading Kubernetes distribution _Red Hat OpenShift_.
 
-To learn more about Quarkus visit sites [Red Hat build of Quarkus](https://developers.redhat.com/products/quarkus/getting-started) and [https://quarkus.io](https://quarkus.io)
+To learn more about Quarkus visit [Red Hat build of Quarkus](https://developers.redhat.com/products/quarkus/getting-started) and [https://quarkus.io](https://quarkus.io)
