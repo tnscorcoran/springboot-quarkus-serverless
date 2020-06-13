@@ -210,7 +210,11 @@ When I then make this new repo public, as shown, it will be available to pull in
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/13-make-repo-public.png)
 
-Next login to your OpenShift cluster
+Next login to your OpenShift cluster as an adminstrator. To house our new Quarkus Serverless application, create a new namespace or project, in my case I call it _quarkus-serverless_:
+
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/14-new-project.png)
+
+
 
 ## Summary
 
