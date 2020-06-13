@@ -186,13 +186,21 @@ Your application now reflects the change you did without a rebuild!
 ## Part 2 - Quarkus in Native mode - as a serverless workload on Kubernetes
 
 ## Steps
-
-First we need package our native application into a container image using the provided Dockerfile (/quarkus-hello-world/Dockerfile.native) and push it to our remote container registry. First login to your remote repo, using _podman login_ or _docker login_ then execute the following or your equivalent according how you want to tag and name your repo:
 ```
 cd $REPO_HOME/quarkus-hello-world
-mvn package
 ```
-
+First we need package our native application into a container image using the provided Dockerfile (/quarkus-hello-world/Dockerfile.native) and push it to our remote container registry. First login to your remote container registry, using _podman login_ or _docker login_ then execute the following or your equivalent according how you want to tag and name your repo:
+```
+docker build -f ./Dockerfile.native -t <registry-username>/<repo-name>:latest .
+docker tag <registry-username>/<repo-name>:latest <registry>/<registry-username>/<repo-name>:latest
+docker push <registry>/<registry-username>/<repo-name>:latest
+```
+or in my case:
+```
+docker build -f ./Dockerfile.native -t tnscorcoran/quarkus-serverless:latest .
+docker tag tnscorcoran/quarkus-serverless:latest quay.io/tnscorcoran/quarkus-serverless:latest
+docker push quay.io/tnscorcoran/quarkus-serverless:latest
+```
 
 
 ## Summary
