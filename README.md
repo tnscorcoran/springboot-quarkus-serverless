@@ -242,7 +242,7 @@ Move to Workloads -> Pods and wait until all are ready and running:
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/20-knative-serving-pods-ready.png)
 
 
-Next we're going to pull in our Quarkus container image and run it in _Serverlesss_ mode. To house our new Quarkus Serverless application, create a new namespace or project, in my case I call it _quarkus-serverless_:
+Next we're going to pull in our Quarkus container image and run it in _Serverlesss_ mode. To house our new Quarkus Serverless application, create a new namespace/project, in my case I call it _quarkus-serverless_:
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/14-new-project.png)
 
