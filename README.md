@@ -256,9 +256,15 @@ Choose the registry/repository you created earlier, in my case _quay.io/tnscorco
 
 *Note if you want you can modify the scaling defaults using the _Scaling_ link at the bottom of the screen. By default it scales to zero after some seconds, which is great for saving cloud costs and we'll experience below.*
 
+After a few seconds the application is available - as indicated by the sold blue circle. Click on the URL link
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/23-app-deployed.png)
 
+Then append *_/greeting_* and you can see the JSON payload returned from this simple API endpoint:
 
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/24-json-payload.png)
 
+Finally after about 30 seconds, the application scales to zero as shown. Any request will waken it very quickly thanks to Quarkus Native's rapid startup times you saw earlier.
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/25-scale-to-zero.png)
 
 
 ## Summary
