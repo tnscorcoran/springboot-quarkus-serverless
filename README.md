@@ -208,6 +208,8 @@ On [http://quay.io](http://quay.io), I label my new repo _quarkus-serverless_ wi
 
 When I then make this new repo public, as shown, it will be available to pull into my cluster.
 
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/13-make-repo-public.png)
+
 
 ## Summary
 
