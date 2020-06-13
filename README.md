@@ -183,7 +183,7 @@ curl http://localhost:8080/greeting
 Your application now reflects the change you did without a rebuild!
 
 
-## Part 2 - Quarkus in Native mode - as a serverless workload on Kubernetes
+## Part 2 - Quarkus in Native mode - as a serverless workload on Kubernetes/OpenShift
 
 ## Steps
 ```
@@ -210,6 +210,7 @@ When I then make this new repo public, as shown, it will be available to pull in
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/13-make-repo-public.png)
 
+Next login to your OpenShift cluster
 
 ## Summary
 
