@@ -271,4 +271,12 @@ Finally after about 30 seconds, the application scales to zero as shown. Any req
 
 Quarkus is a new Open Source Red Hat sponsored Java framework. It's designed with cloud native development and Kubernetes in mind.
 
-It's got radically lower memory and faster startup than traditional cloud native Java (we used Spring Boot to represent that). The advantages are most pronounced in Native mode - making it an ideal candidate for Serverless workloads. However in JVM mode, it's advantages are still significant - making it the best choice for longer lived applications where JVM capabilities, in particular Garbage Collection, are needed.
+It's got radically lower memory and faster startup than traditional cloud native Java (we used Spring Boot to represent that). The advantages are most pronounced in Native mode - making it an ideal candidate for Serverless workloads. Serverless and scale to zero can dramatically reduce your cloud infrastructre costs as machines can be powered down to zero in quiet periods.
+
+Quarkus in JVM mode, also advantages are still significant - making it the best choice for longer lived applications where JVM capabilities, in particular Garbage Collection, are needed.
+
+We demonstrated the following 
+- 2 applications, both identical in functionality; one Quarkus and one Spring Boot
+- the compartive startup times and memory consumption in a) Spring Boot, b) Quarkus in JVM mode and c) Quarkus in Native mode
+- a really cool feature of Quarkus - live code update.
+- an outstanding use case of Quarkus Native mode - serverless on Kubernetes. We used the industry leading Kubernetes distribution _Red Hat OpenShift_.
