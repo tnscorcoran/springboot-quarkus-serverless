@@ -189,7 +189,7 @@ Your application now reflects the change you did without a rebuild!
 ```
 cd $REPO_HOME/quarkus-hello-world
 ```
-First we need package our native application into a container image using the provided Dockerfile (/quarkus-hello-world/Dockerfile.native) and push it to our remote container registry. First login to your remote container registry, using _podman login_ or _docker login_ then execute the following or your equivalent according how you want to tag and name your repo:
+First we need to package our native application into a container image using the provided Dockerfile (/quarkus-hello-world/Dockerfile.native) and push it to our remote container registry. First login to your remote container registry, using _podman login_ or _docker login_ then execute the following or your equivalent according how you want to tag and name your repo:
 ```
 docker build -f ./Dockerfile.native -t <registry-username>/<repo-name>:latest .
 docker tag <registry-username>/<repo-name>:latest <registry>/<registry-username>/<repo-name>:latest
