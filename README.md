@@ -12,13 +12,10 @@ We then push our native application as container to the popular Quay container r
 
 ## Prerequisites
 To run the first part of this demo, you'll need Java (I use version 8), Maven and GraalVM installed.
-To run the second part, you'll need an OpenShift 4.4 cluster. I recommend [Codeready Containers](https://developers.redhat.com/products/codeready-containers/overview) for a local cluster or [try.openshift.com](https://www.openshift.com/try) for a full production ready cluster.
+To run the second part, you'll need an OpenShift 4.4 cluster. I recommend [Codeready Containers](https://developers.redhat.com/products/codeready-containers/overview) for a local cluster or [try.openshift.com](https://www.openshift.com/try) for a full production ready cluster. You'll also need access to a public copntainer registry. I use the excellent free one from quay.io.
 
 
-
-
-
-
+## Part 1 - Spring Boot / Quarkus comparison
 
 ## Steps
 
@@ -184,6 +181,11 @@ Save the file. Test it again:
 curl http://localhost:8080/greeting
 ```
 Your application now reflects the change you did without a rebuild!
+
+
+## Part 2 - Quarkus in Native mode - as a serverless workload on Kubernetes
+
+## Steps
 
 
 ## Summary
