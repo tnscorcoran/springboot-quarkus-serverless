@@ -202,7 +202,7 @@ docker tag tnscorcoran/quarkus-serverless:latest quay.io/tnscorcoran/quarkus-ser
 docker push quay.io/tnscorcoran/quarkus-serverless:latest
 ```
 On [http://quay.io](http://quay.io), I label my new repo _quarkus-serverless_ with _latest_ 
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/12-tag-image-latest.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/12-tag-image-latest.png)
 
 
 When I then make this new repo public, as shown, it will be available to pull into my cluster.
