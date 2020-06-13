@@ -204,7 +204,6 @@ docker push quay.io/tnscorcoran/native-quarkus-hello:latest
 
 *Note I had to run the above _docker build_ commands on a Linux box*
 
-
 On [http://quay.io](http://quay.io), I label my new repo _quarkus-serverless_ with _latest_ 
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/12-tag-image-latest.png)
@@ -251,7 +250,12 @@ Now it's time to pull in our Quarkus image in Serverless mode. Change to the Dev
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/21-developer-perspective-create-from-container-image.png)
 
-Choose the registry/repository you created earlier, in my case _quay.io/tnscorcoran/native-quarkus-hello_. Tab off it to validate, accept the default names 
+Choose the registry/repository you created earlier, in my case _quay.io/tnscorcoran/native-quarkus-hello_. Choose _KNative Service_ and accept the defaults:
+
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/22-knative-app-create.png)
+
+*Note if you want you can modify the scaling defaults using the _Scaling_ link. By default it scakles to zero after some seconds, which is great for saving cloud costs and we'll experience below.*
+
 
 
 
