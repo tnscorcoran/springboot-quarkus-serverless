@@ -187,6 +187,13 @@ Your application now reflects the change you did without a rebuild!
 
 ## Steps
 
+First we need package our native application into a container image using the provided Dockerfile (/quarkus-hello-world/Dockerfile.native) and push it to our remote container registry. First login to your remote repo, using _podman login_ or _docker login_
+```
+cd $REPO_HOME/quarkus-hello-world
+mvn package
+```
+
+
 
 ## Summary
 
