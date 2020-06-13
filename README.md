@@ -197,10 +197,14 @@ docker push <registry>/<registry-username>/<repo-name>:latest
 ```
 or in my case:
 ```
-docker build -f ./Dockerfile.native -t tnscorcoran/quarkus-serverless:latest .
-docker tag tnscorcoran/quarkus-serverless:latest quay.io/tnscorcoran/quarkus-serverless:latest
-docker push quay.io/tnscorcoran/quarkus-serverless:latest
+docker build -f ./Dockerfile.native -t tnscorcoran/native-quarkus-hello:latest .
+docker tag tnscorcoran/native-quarkus-hello:latest quay.io/tnscorcoran/native-quarkus-hello:latest
+docker push quay.io/tnscorcoran/native-quarkus-hello:latest
 ```
+
+*Note I had to run the above _docker build_ commands on a Linux box*
+
+
 On [http://quay.io](http://quay.io), I label my new repo _quarkus-serverless_ with _latest_ 
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/12-tag-image-latest.png)
@@ -242,6 +246,16 @@ Move to Workloads -> Pods and wait until all are ready and running:
 Next we're going to pull in our Quarkus container image and run it in _Serverlesss_ mode. To house our new Quarkus Serverless application, create a new namespace or project, in my case I call it _quarkus-serverless_:
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/14-new-project.png)
+
+Now it's time to pull in our Quarkus image in Serverless mode. Change to the Developer perpective, choose Topology and create an application from a container image as shown:
+
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/21-developer-perspective-create-from-container-image.png)
+
+Choose the registry/repository you created earlier, in my case _quay.io/tnscorcoran/native-quarkus-hello_. Tab off it to validate, accept the default names 
+
+
+
+
 
 ## Summary
 

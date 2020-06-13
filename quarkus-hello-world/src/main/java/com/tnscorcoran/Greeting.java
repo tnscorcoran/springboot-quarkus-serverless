@@ -10,7 +10,7 @@ public class Greeting {
             message = DESCRIPTION + " - for " +name;
         }
         else{
-            message = "June 12 - " + DESCRIPTION ;
+            message = "May 12 - " + DESCRIPTION ;
         }
         
     }
