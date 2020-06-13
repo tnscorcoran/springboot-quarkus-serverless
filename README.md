@@ -214,6 +214,17 @@ Next login to your OpenShift cluster as an adminstrator. To house our new Quarku
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/14-new-project.png)
 
+Now we're going to provision our Serverless Operator, which will allow us to create a new _KNative_ serverless runtime for our application. Go to Operators -> Operator Hub -> search for _serverless_ and choose the OpenShift Serverless Operator:
+
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/15-OpenShift-Serverless-Operator.png)
+
+Click Install
+
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/16-install-OpenShift-Serverless-Operator.png)
+
+Click Update Channel 4.4 and Subscribe.
+
+
 
 
 ## Summary
