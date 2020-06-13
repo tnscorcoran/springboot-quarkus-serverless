@@ -11,7 +11,14 @@ We also briefly demonstrate Quarkus' live code updating capabilities.
 We then push our native application as container to the popular Quay container registry and from there we pull it into a KNative Serverless application running on Red Hat's industry leading Kubernetes distribution, OpenShift.
 
 ## Prerequisites
-To run this demo, you'll need Java (I use version 8), Maven and GraalVM installed.
+To run the first part of this demo, you'll need Java (I use version 8), Maven and GraalVM installed.
+To run the second part, you'll need an OpenShift 4.4 cluster. I recommend [Codeready Containers](https://developers.redhat.com/products/codeready-containers/overview) for a local cluster or [try.openshift.com](https://www.openshift.com/try) for a full production ready cluster.
+
+
+
+
+
+
 
 ## Steps
 
