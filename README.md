@@ -214,12 +214,7 @@ Next login to your OpenShift cluster as an adminstrator.
 
 Now we're going to provision our Serverless Operator, which will allow us to create a new _KNative_ serverless runtime for our application. 
 
-First we need a project / namespace called knative-serving (needs that name). Create as follows
-
-![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/18-new-project-knative-serving.png)
-
-
-Now go to Operators -> Operator Hub -> search for _serverless_ and choose the OpenShift Serverless Operator:
+Go to Operators -> Operator Hub -> search for _serverless_ and choose the OpenShift Serverless Operator:
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/15-OpenShift-Serverless-Operator.png)
 
@@ -230,6 +225,18 @@ Click Install
 Click Update Channel 4.4 and Subscribe.
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/17-subscribe.png)
+
+We need a project / namespace called _knative-serving_ (it needs that name). Create as follows
+
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/18-new-project-knative-serving.png)
+
+With your new project _knative-serving_ selected, we will deploy the knative serving _API_. As follows
+
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/19-new-knative-serving.png)
+
+Move to Workloads -> Pods and wait until all are ready and running:
+
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/20-knative-serving-pods-ready.png)
 
 
 Next we're going to pull in our Quarkus container image and run it in _Serverlesss_ mode. To house our new Quarkus Serverless application, create a new namespace or project, in my case I call it _quarkus-serverless_:
