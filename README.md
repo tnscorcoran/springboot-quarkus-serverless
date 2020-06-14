@@ -1,8 +1,8 @@
 # This is a two part Demo:
-## Part 1 - Comparison of Spring Boot versus Quarkus in memory consumption and startup times. 
+## Part 1 - Comparison of Spring Boot versus Quarkus in memory consumption and startup times. We also show Quarkus' live code updating.
 ## Part 2 - Implements a popular use case for Quarkus in Native mode - as a serverless workload on Kubernetes, in our case the industry leading Kubernetes distribution, Red Hat OpenShift. 
 
-We take two very simple and pretty identical RESTful applications and compares memory consumption and startup times in
+We take two very simple and pretty identical RESTful applications, one Spring Boot, the other Quarkus. We compare memory consumption and startup times in
 - Spring Boot
 - Quarkus in JVM mode
 - Quarkus in Native mode
@@ -12,7 +12,7 @@ We then push our native application as container to the popular Quay container r
 
 ## Prerequisites
 To run the first part of this demo, you'll need Java (I use version 8), Maven and GraalVM installed.
-To run the second part, you'll need an OpenShift 4.4 cluster. I recommend [Codeready Containers](https://developers.redhat.com/products/codeready-containers/overview) for a local cluster or [try.openshift.com](https://www.openshift.com/try) for a full production ready cluster. You'll also need access to a public copntainer registry. I use the excellent free one from [http://quay.io](http://quay.io).
+To run the second part, you'll need an OpenShift 4.4 cluster. I recommend [Codeready Containers](https://developers.redhat.com/products/codeready-containers/overview) for a local cluster or [try.openshift.com](https://www.openshift.com/try) for a full production ready cluster. You'll also need access to a public container registry. I use the excellent free one from [http://quay.io](http://quay.io).
 
 
 ## Part 1 - Spring Boot / Quarkus comparison
