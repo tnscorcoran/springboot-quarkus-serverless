@@ -8,7 +8,7 @@ We take two very simple and pretty identical RESTful applications, one Spring Bo
 - Quarkus in Native mode
 We also briefly demonstrate Quarkus' live code updating capabilities.
 
-We then push our native application as container to the popular Quay container registry and from there we pull it into a KNative Serverless application running on Red Hat's industry leading Kubernetes distribution, OpenShift.
+We then push our native application as container to the popular Quay container registry and from there we pull it into a KNative Serverless application running on OpenShift.
 
 ## Prerequisites
 To run the first part of this demo, you'll need Java (I use version 8), Maven and GraalVM installed.
