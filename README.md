@@ -197,9 +197,9 @@ docker push <registry>/<registry-username>/<repo-name>:latest
 ```
 or in my case:
 ```
-docker build -f ./Dockerfile.native -t tnscorcoran/native-quarkus-hello:latest .
-docker tag tnscorcoran/native-quarkus-hello:latest quay.io/tnscorcoran/native-quarkus-hello:latest
-docker push quay.io/tnscorcoran/native-quarkus-hello:latest
+docker build -f ./Dockerfile.native -t tnscorcoran/quarkus-serverless:latest .
+docker tag tnscorcoran/quarkus-serverless:latest quay.io/tnscorcoran/quarkus-serverless:latest
+docker push quay.io/tnscorcoran/quarkus-serverless:latest
 ```
 
 *Note I had to run the above _docker build_ commands on a Linux box*
@@ -250,7 +250,7 @@ Now it's time to pull in our Quarkus image in Serverless mode. Change to the Dev
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/21-developer-perspective-create-from-container-image.png)
 
-Choose the registry/repository you created earlier, in my case _quay.io/tnscorcoran/native-quarkus-hello_. Choose _KNative Service_ and accept the other defaults:
+Choose the registry/repository you created earlier, in my case _quay.io/tnscorcoran/quarkus-serverless_. Choose _KNative Service_ and accept the other defaults:
 
 ![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/22-knative-app-create.png)
 
