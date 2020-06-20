@@ -116,15 +116,10 @@ Stay in directory $REPO_HOME/quarkus-hello-world
 Now compile the application down to a native image using GraalVM (for instructions on how to set this up - go to https://quarkus.io/guides/building-native-image)
 
 ```
-./mvnw package -Pnative
+mvn package -Pnative -Dquarkus.native.container-build=true
 ```
 
-If it complains it can't find .mvn/wrapper/maven-wrapper.properties, run this first
-```
-mvn -N io.takari:maven:wrapper
-```
-
-Now after *mvnw package -Pnative* run it:
+Now after *mvnw package* run it:
 ```
 ./target/quarkus-hello-world-1.0-SNAPSHOT-runner
 ```
@@ -202,7 +197,6 @@ docker tag tnscorcoran/quarkus-serverless:latest quay.io/tnscorcoran/quarkus-ser
 docker push quay.io/tnscorcoran/quarkus-serverless:latest
 ```
 
-*Note I had to run the above _docker build_ commands on a Linux box*
 
 On [http://quay.io](http://quay.io), I label my new repo _quarkus-serverless_ with _latest_ 
 
