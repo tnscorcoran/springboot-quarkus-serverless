@@ -155,7 +155,7 @@ ps -o pid,rss,command -p $(pgrep -f runner)
 
 # Bonus - Live code update
 This demo focuses on the startup-time and memory advantages of Quarkus over a traditional cloud native stack like Spring Boot.
-Quarkus several another benefits - like the ability to combine imperative and reactive programming in the same application, user friendly error reporting, and a superb extension network. But a massive benefit of Quarkus is *live code updates*. When running in *dev* mode, to see code, package, maven dependency changes, all you need to do is save the file - no need to rebuild.
+Quarkus has several another benefits - like the ability to combine imperative and reactive programming in the same application, user friendly error reporting, and a superb extension network. But a massive benefit of Quarkus is *live code updates*. When running in *dev* mode, to see code, package, maven dependency changes, all you need to do is save the file - no need to rebuild.
 
 Let's test this out. Execute the following to startup in *dev* mode
 ```
