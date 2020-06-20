@@ -119,7 +119,7 @@ Now compile the application down to a native image using GraalVM (for instructio
 mvn package -Pnative -Dquarkus.native.container-build=true
 ```
 
-Now after *mvnw package* run it:
+Now after *mvn package* run it:
 ```
 ./target/quarkus-hello-world-1.0-SNAPSHOT-runner
 ```
