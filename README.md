@@ -32,14 +32,14 @@ java -jar target/springboot-hello-world-1.0.0.jar
 ```
 
 Take note of the startup time - you can see mine took 2.258 seconds
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/01-springboot-startup.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/01-springboot-startup.png)
 
 Also take note of the memory consumption - under rss (Resident Set Size) in the following command
 ```
 ps -o pid,rss,command -p $(pgrep -f springboot)
 ```
 -  you can see mine consumed 629,024k of memory
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/02-springboot-rss.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/02-springboot-rss.png)
 
 And of course - test your application
 ```
@@ -61,14 +61,14 @@ java -jar target/quarkus-hello-world-1.0-SNAPSHOT-runner.jar
 ```
 
 Take note of the startup time -  you can see mine took 0.667 seconds
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/03-quarkus-jvm-startup.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/03-quarkus-jvm-startup.png)
 
 I created a sheet that shows
 - how many times faster Quarkus is to start up than Spring Boot (in both JVM and Native mode).
 - what percentage of Spring Boot's memory requirement Quarkus has.
 
 Quarkus' 0.667 seconds startup time is more than 3 times faster than Spring Boot's 2.258 seconds - for an identical application:
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/04-quarkus-jvm-versus-spring-boot-startup.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/04-quarkus-jvm-versus-spring-boot-startup.png)
 
 Now take note of the memory consumption, rss:
 ```
@@ -76,14 +76,14 @@ ps -o pid,rss,command -p $(pgrep -f runner)
 ```
 
 You can see mine consumed 158,696k of memory
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/05-quarkus-jvm-rss.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/05-quarkus-jvm-rss.png)
 
 
 
 Quarkus used about a quarter of Spring Boot's memory for effectively the same application:
 
 
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/06-quarkus-jvm-versus-spring-boot-memory.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/06-quarkus-jvm-versus-spring-boot-memory.png)
 
 And again - verify your application
 ```
@@ -125,10 +125,10 @@ Now after *mvnw package* run it:
 ```
 
 Again take note of the startup time -  you can see mine took 0.012 seconds
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/07-quarkus-native-startup.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/07-quarkus-native-startup.png)
 
 That's nearly 200 times faster than Spring Boot - for an identical application:
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/08-quarkus-native-versus-spring-boot-startup.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/08-quarkus-native-versus-spring-boot-startup.png)
 
 Now take note of the memory consumption, rss:
 ```
@@ -136,13 +136,13 @@ ps -o pid,rss,command -p $(pgrep -f runner)
 ```
 
 You can see mine consumed 18,258k of memory
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/09-quarkus-native-memory.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/09-quarkus-native-memory.png)
 
 
 
 Quarkus in Native mode uses about 3% of Spring Boot's memory for this hello world application:
 
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/10-quarkus-native-versus-spring-boot-memory.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/10-quarkus-native-versus-spring-boot-memory.png)
 
 And again - test your application
 ```
@@ -169,7 +169,7 @@ curl http://localhost:8080/greeting
 
 Now, keep the app running but make a change to a source file - say
 this file's default message:
-![](https://raw.githubusercontent.com/tnscorcoran/springboot-quarkus-compare/master/images/11-modified-Greeting.png)
+![](https://github.com/tnscorcoran/springboot-quarkus-serverless/blob/master/images/11-modified-Greeting.png)
 
 Save the file. Test it again:
 ```
