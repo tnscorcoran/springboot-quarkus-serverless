@@ -1,7 +1,7 @@
 # This is a two part Demo:
 ## Part 1 - Comparison of Spring Boot versus Quarkus in memory consumption and startup times. We also show Quarkus' live code updating.
 ## Part 2 - Implements a popular use case for Quarkus in Native mode - as a serverless workload on Kubernetes, in our case the industry leading Kubernetes distribution, Red Hat OpenShift. 
-[You Tube Link](https://youtu.be/bMkcVYTW8Z8)
+Available on You Tube at [https://youtu.be/bMkcVYTW8Z8](https://youtu.be/bMkcVYTW8Z8)
 
 We take two very simple and pretty identical RESTful applications, one Spring Boot, the other Quarkus. We compare memory consumption and startup times in
 - Spring Boot
@@ -278,4 +278,4 @@ We demonstrated the following
 
 To learn more about Quarkus visit [Red Hat build of Quarkus](https://developers.redhat.com/products/quarkus/getting-started) and [https://quarkus.io](https://quarkus.io)
 
-This demo can be viewed on [this You Tube link](https://youtu.be/bMkcVYTW8Z8).
+This demo can be viewed on You Tube at [https://youtu.be/bMkcVYTW8Z8](https://youtu.be/bMkcVYTW8Z8).
